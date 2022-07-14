@@ -1,0 +1,40 @@
+.hero2 { color: yellow; 
+    font-family: "Source Code Pro", monospace;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    /* added animation property to show the character one at a time*/
+    animation: type 8s steps(60, end); 
+    }
+
+    /*set the background colour of div element to black */
+    .wrapper {
+    background-color: black;
+    }
+
+    @keyframes type{ 
+    from { 
+        width: 0; 
+        } 
+}
+.hero3 { color: yellow; 
+    font-family: "Source Code Pro", monospace;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    /* added animation property to show the character one at a time*/
+    animation: type s steps(60, end); 
+    }
+
+    /*set the background colour of div element to black */
+    .wrapper {
+    background-color: black;
+    }
+
+    @keyframes type{ 
+    from { 
+        width: 0; 
+        } 
+} 

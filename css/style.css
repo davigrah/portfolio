@@ -1,20 +1,23 @@
-nav {
-    background-color: rgba(0, 0, 0, 0.145);
-}
-body {
-    background-color: black;
-}
-.header {
-    background-color: black;
-    height: 100vh;
-}
-
-.headercontainer {
-    width: 300px;
-    text-align: center;
-}
-
-.type {
+/* MOBILE FIRST LAYOUT MIN-WIDTH 320px*/
+body, html {
+    overflow-x: hidden;
+  }
+   /* BACKGROUND */
+#svg-background {
+    z-index: -10;
+    height: 600px
+  }
+  
+  /* HEADER */
+  #header {
+      height: 100vh;
+  }
+  .headercontainer {
+      margin-top: 30%;
+      width: 300px;
+     text-align: center;
+  }
+  .type {
     font-family: monospace;
     color:#0000;
     background:
@@ -27,20 +30,47 @@ body {
     animation: 
       b .7s infinite steps(1),   
       t calc(var(--n)*.1s) steps(var(--n)) forwards;
-      font-size: 30px;
+      font-size: 23px;
   }
-  
   @keyframes t{
     from {background-size:0 200%}
   }
   @keyframes b{
     50% {background-position:0 -100%,0 0}
   }
+/* ARROW */
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 150px;
+    fill: white;
+    
+  }
   
-  
-  .tools{
-    background-color: black;
+  .arrows path {
+    stroke: rgba(255, 255, 255, 0.597);
+    fill: transparent;
+    stroke-width: 3px;  
+  }
+ 
+  /* ABOUT */
+  #about h1 {
+    font-family: monospace;
+  }
+  #about p {
+    font-family: monospace;
+    font-size: 15px;
+  }
+
+  #about{
+  margin-top: 0px;
     height: 100vh;
+  }
+  .present1 {
+    padding-top: 50px;
   }
   
   .col svg {
@@ -53,4 +83,21 @@ body {
       justify-content: center;
   }
 
-  
+  @media (min-width: 768px) {
+    .header {
+        height: 100vh;
+    }
+    .headercontainer {
+        margin-top: 25%;
+    }
+    
+    
+    
+    .headercontainer {
+        height: 100px;
+        text-align: center;
+        margin-top: 25%;
+    }
+  }
+
+    

@@ -2,12 +2,41 @@
 body, html {
     overflow-x: hidden;
   }
+  h1, h2, h3, h4, h5, h6, p, a {
+    font-family: monospace;
+  }
+ 
    /* BACKGROUND */
 #svg-background {
-    z-index: -10;
-    height: 600px
+    z-index: 0;
+    height: 575px
   }
   
+  /* NAV */
+
+  .navbar-1{
+    padding-top: 30px;
+    background-color: black;
+    margin-bottom: 0;
+  }
+  .navbar-2{
+    background-color: black;
+    margin-bottom: 0;
+  }
+  .navbar-2 svg:hover{
+    transform: scale(1.1);
+  }
+  .navbar-nav:hover {
+    transform: scale(1.1);
+  }
+  .navbutton {
+    background-color: white;
+    border-radius: 30px;
+    height: 25px
+  }
+  .navbutton {
+    padding: 0px;
+  }
   /* HEADER */
   #header {
       height: 100vh;
@@ -16,6 +45,7 @@ body, html {
       margin-top: 30%;
       width: 300px;
      text-align: center;
+     z-index: 1;
   }
   .type {
     font-family: monospace;
@@ -51,28 +81,23 @@ body, html {
   }
   
   .arrows path {
-    stroke: rgba(255, 255, 255, 0.597);
+    stroke: rgba(255, 255, 255, 0.85);
     fill: transparent;
     stroke-width: 3px;  
   }
  
   /* ABOUT */
-  #about h1 {
-    font-family: monospace;
-  }
+  
   #about p {
-    font-family: monospace;
     font-size: 15px;
   }
-
   #about{
-  margin-top: 0px;
+   margin-top: 0px;
     height: 100vh;
   }
   .present1 {
-    padding-top: 50px;
+    
   }
-  
   .col svg {
       margin: 20px;
       width: 50px;
@@ -82,6 +107,60 @@ body, html {
       display: flex;
       justify-content: center;
   }
+  .skills {
+   margin-top: 140px;
+   position: absolute;
+  }
+  .skills h1 {
+    color: white;
+  }
+  
+  .col {
+    padding: 9px;
+  }
+#projects {
+  
+  height: 100vh;
+}
+.projects {
+  position: absolute;
+  margin-top: 50px;
+}
+.background2 {
+  transform: rotate(180deg);
+  
+}
+#about svg {
+  transition: transform .1s;
+}
+#about svg:hover, #projects svg:hover {
+  transform: scale(1.1);
+}
+
+
+#contact {
+  height: 100vh;
+}
+
+input, textarea  {
+  font-family: monospace;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input:hover, textarea:hover {
+  transform: scale(1.01);
+}
+.btn {
+  font-family: monospace;
+  background-color:black;
+}
+.btn:hover {
+  background-color: rgb(73, 73, 73);
+  transform: scale(1.01);
+}
+
 
   @media (min-width: 768px) {
     .header {

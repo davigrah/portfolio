@@ -9,16 +9,23 @@ body, html {
    /* BACKGROUND */
 #svg-background {
     z-index: 0;
-    height: 575px
-  }
-  
+    height: 90%;
+}
+.scaling-svg-container {
+  position: relative; 
+  height: 90%; 
+  width: 100%; 
+  padding: 0;
+  padding-bottom: 100%; 
+}
+  /* 575px */
   /* NAV */
 
   .navbar-1{
     padding-top: 30px;
     background-color: black;
     margin-bottom: 0;
-    border: solid 6px black;
+    border: solid 8px black;
   }
   .navbar-2{
     background-color: black;
@@ -42,11 +49,17 @@ body, html {
   #header {
       height: 100vh;
   }
+
+  
   .headercontainer {
-      margin-top: 30%;
-      width: 300px;
-     text-align: center;
-     z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    right: 1%;
+    height: 300px;
+    width: 320px;
+    text-align: center;
+    z-index: 1;
   }
   .type {
     font-family: monospace;
@@ -160,7 +173,7 @@ input:hover, textarea:hover {
 }
 
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .header {
         height: 100vh;
     }
@@ -174,7 +187,7 @@ input:hover, textarea:hover {
         height: 100px;
         text-align: center;
         margin-top: 25%;
-    }
-  }
+    } */
+  /* } */
 
-    
+ 

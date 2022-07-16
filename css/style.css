@@ -173,21 +173,16 @@ input:hover, textarea:hover {
 }
 
 
-  /* @media (min-width: 768px) {
-    .header {
-        height: 100vh;
-    }
-    .headercontainer {
-        margin-top: 25%;
-    }
+  @media (min-width: 768px) {
     
+    .arrow {
+    top: 80%;
+  }
+  .headercontainer {
+  top: 40%;
+  }
+  
     
-    
-    .headercontainer {
-        height: 100px;
-        text-align: center;
-        margin-top: 25%;
-    } */
-  /* } */
+  }
 
  

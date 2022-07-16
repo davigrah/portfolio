@@ -18,6 +18,7 @@ body, html {
     padding-top: 30px;
     background-color: black;
     margin-bottom: 0;
+    border: solid 6px black;
   }
   .navbar-2{
     background-color: black;
@@ -93,10 +94,7 @@ body, html {
   }
   #about{
    margin-top: 0px;
-    height: 100vh;
-  }
-  .present1 {
-    
+    height: 90vh;
   }
   .col svg {
       margin: 20px;
@@ -139,7 +137,7 @@ body, html {
 
 
 #contact {
-  height: 100vh;
+  height: 90vh;
 }
 
 input, textarea  {

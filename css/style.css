@@ -192,12 +192,13 @@ input:hover, textarea:hover {
   }
   /* SKILLS  */
   #container-background-skills {
-    margin-top: -360px;
+    margin-top: -480px;
   }
   /* CONTACT  */
   #contact {
-      height: 70vh;
-      margin-top: 250px;
+      height: 60vh;
+      margin-top: 450px;
+      margin-bottom: 50px;
 }
 }
 @media (min-width: 400px) {
@@ -303,7 +304,7 @@ input:hover, textarea:hover {
   }
    #background-header {
       height: 100vh;
-      margin-top: -220px;
+      margin-top: -120px;
     }
     #about h1, #skills h1, #projects h1, #contact h1{
       font-size: 50px;
@@ -318,7 +319,7 @@ input:hover, textarea:hover {
   }
   /* ABOUT  */
   #about {
-    margin-top: 200px;
+    margin-top: 300px;
   }
   /* SKILLS  */
   #background-skills {
@@ -349,6 +350,7 @@ input:hover, textarea:hover {
   #contact {
       height: 70vh;
       margin-top: 800px;
+      margin-bottom: 100px;
       
       
   }

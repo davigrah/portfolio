@@ -23,8 +23,8 @@
     <section id="about-project1">
         <div class="about-container container"> 
            <div class="project-title"> 
-               <h1 class="text-center text-white">Game Show App</h1>
-               <p class="text-center mt-3 text-white"> A word guessing game where players will try to guess a random phrase.
+               <h1 class="text-center text-white project-h1">Game Show App</h1>
+               <p class="text-center mt-3 text-white project-p"> A word guessing game where players will try to guess a random phrase.
                 Using Javascript, i've created an array of phrases and wrote functions to choose a random phrase from that array, split the phrase into letters, and put those letters into the game board.
                 Javascript compare the letter the player has chosen with the random phrase. The player can keep choosing letters until they make five incorrect guesses.
                </p>
@@ -53,5 +53,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration: 2000,
+            delay: 100,
+            origin: 'right',
+            distance: '2000px'
+        });
+        sr.reveal('.project-h1', {
+            duration: 2000,
+            delay: 100,
+            origin: 'top',
+            distance: '10px'
+        });
+        sr.reveal('.project-p', {
+            duration: 2000,
+            delay: 300,
+            origin: 'top',
+            distance: '10px'
+        });
+        sr.reveal('.options', {
+            duration: 2000,
+            delay: 500,
+            origin: 'top',
+            distance: '10px'
+        });
+    </script>
 </body>

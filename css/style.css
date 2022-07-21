@@ -110,7 +110,7 @@ stroke-width: 3px;
 #about {
     margin-bottom: -10px;
 }
-#skills svg:hover, #projects svg:hover {
+#skills svg:hover, #projects svg:hover, .options svg:hover {
   transform: scale(1.1);
 }
 
@@ -357,6 +357,28 @@ input:hover, textarea:hover {
 }
 
 
+/* -------------PROJECT 1------------- */
 
-/* TESTING NEW BUTTON  */
+/* GENERAL STYLING */
+#body-project1 {
+  background-color: black;
+}
+
+/* ABOUT */
+.about-container {
+  max-width: 80vh;
+  height: 80vh;
+}
+
+.project-title {
+    margin: 0;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+
+.options svg {
+  margin: 15px;
+}
 

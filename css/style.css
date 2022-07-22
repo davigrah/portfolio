@@ -138,6 +138,14 @@ stroke-width: 3px;
 
 }
 
+.tooltiptext {
+  visibility: visible;
+  background-color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+
+}
 
 /* CONTACT  */
 #background-contact {
@@ -283,6 +291,7 @@ input:hover, textarea:hover {
       height: 60px;
       margin-top: 30px;
   }
+  
   
   /* CONTACT  */
   #background-contact {

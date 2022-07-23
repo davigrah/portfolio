@@ -32,11 +32,17 @@ html, body {
   display: flex; 
   align-items: center;
 }
+
+.navbar-1, .arrow {
+  transition: 0.3s linear;
+}
 .navbar-1:hover {
   transform: scale(1.1);
+  transition: 0.3s linear;
 }
 .arrow:hover {
   transform: scale(1.1);
+  transition: 0.3s linear;
 }
 
 /* HEADER */
@@ -110,8 +116,12 @@ stroke-width: 3px;
 #about {
     margin-bottom: -10px;
 }
+#skills svg, #projects svg, .options svg{
+  transition: 0.3s linear;
+}
 #skills svg:hover, #projects svg:hover, .options svg:hover {
   transform: scale(1.1);
+  transition: 0.3s linear;;
 }
 
 /* SKILLS  */
@@ -144,12 +154,23 @@ stroke-width: 3px;
 .tooltiptext-4, 
 .tooltiptext-5, 
 .tooltiptext-6 {
-  visibility: visible;
+  opacity: 1;
   background-color: white;
-  height: 30px;
-  width: 100px;
-  border-radius: 50px;
+  height: 50px;
+  width: 140px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 15px;
+  right: 60px;
+  transition: 0.3s linear;
+}
+span {
+  text-align: center;
+}
 
+.row-resize svg {
+  position:relative; 
+  left: 50px;
 }
 
 /* CONTACT  */
@@ -184,12 +205,13 @@ form {
   border-radius: 20px;
 }
 
-
-
-
+input, textarea {
+  transition: 0.3s linear;
+}
 
 input:hover, textarea:hover {
   transform: scale(1.01);
+  
 }
 .btn {
   font-family: monospace;
@@ -198,14 +220,19 @@ input:hover, textarea:hover {
 .btn:hover {
   background-color: rgb(73, 73, 73);
   transform: scale(1.01);
+  transition: 0.3s linear;
 }
 /* FOOTER  */
 .footer {
   background-color: black;
   margin-bottom: 0;
 }
+.footer svg {
+  transition: 0.3s linear;
+}
 .footer svg:hover{
   transform: scale(1.1);
+  transition: 0.3s linear;
 }
 
 

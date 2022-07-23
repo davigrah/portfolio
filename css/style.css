@@ -138,7 +138,12 @@ stroke-width: 3px;
 
 }
 
-.tooltiptext {
+.tooltiptext-1, 
+.tooltiptext-2, 
+.tooltiptext-3, 
+.tooltiptext-4, 
+.tooltiptext-5, 
+.tooltiptext-6 {
   visibility: visible;
   background-color: white;
   height: 30px;

@@ -6,6 +6,8 @@
 html, body {
   overflow-x: hidden;
   position:relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
 }
 #header {
     height: 100vh;
@@ -14,10 +16,18 @@ html, body {
     height: 20vh;
 }
 
+
+input {
+  font-weight: 100;
+}
+ h1 {
+  font-weight: 150;
+}
 .background-rotate {
   transform: rotate(180deg);
-  
 }
+/* FONTS  */
+
 /* NAV  */
 .navbar-1{
  padding: 20px;
@@ -117,11 +127,11 @@ stroke-width: 3px;
     margin-bottom: -10px;
 }
 #skills svg, #projects svg, .options svg{
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 #skills svg:hover, #projects svg:hover, .options svg:hover {
   transform: scale(1.1);
-  transition: 0.3s linear;;
+  transition: 0.2s linear;;
 }
 
 /* SKILLS  */
@@ -154,24 +164,90 @@ stroke-width: 3px;
 .tooltiptext-4, 
 .tooltiptext-5, 
 .tooltiptext-6 {
-  opacity: 1;
+  opacity: 0;
   background-color: white;
   height: 50px;
   width: 140px;
   border-radius: 20px;
   position: relative;
-  bottom: 15px;
-  right: 60px;
+  top: 65px;
+  right: 35px;
   transition: 0.3s linear;
+  font-weight: 300;
+  transition: 0.3s linear;
+  z-index:-1;
+}
+.tooltiptext-1,
+.tooltiptext-2,
+.tooltiptext-3{
+ font-size: 17px;
+ letter-spacing: 1.2px;
+ 
+}
+.tooltiptext-4,.tooltiptext-6 {
+  font-size: 17px;
+  letter-spacing: 1.2px;
+}
+.tooltiptext-5 {
+  text-align: center;
+  padding-top: 12px;
+  letter-spacing: 1.2px;
 }
 span {
   text-align: center;
+  
 }
 
 .row-resize svg {
   position:relative; 
-  left: 50px;
+  left: 75px;
 }
+
+/* 
+.tooltiptext-1, 
+.tooltiptext-2, 
+.tooltiptext-3, 
+.tooltiptext-4, 
+.tooltiptext-5, 
+.tooltiptext-6 {
+  opacity: 0;
+  background-color: white;
+  height: 50px;
+  width: 140px;
+  border-radius: 20px;
+  position: relative;
+  top: 65px;
+  right: 35px;
+  transition: 0.3s linear;
+  font-weight: 300;
+  transition: 0.3s linear;
+  z-index:-1;
+}
+.tooltiptext-1,
+.tooltiptext-2,
+.tooltiptext-3{
+ font-size: 17px;
+ letter-spacing: 1.2px;
+ 
+}
+.tooltiptext-4,.tooltiptext-6 {
+  font-size: 17px;
+  letter-spacing: 1.2px;
+}
+.tooltiptext-5 {
+  text-align: center;
+  padding-top: 12px;
+  letter-spacing: 1.2px;
+}
+span {
+  text-align: center;
+  
+}
+
+.row-resize svg {
+  position:relative; 
+  left: 75px;
+} */
 
 /* CONTACT  */
 #background-contact {
@@ -192,31 +268,34 @@ form {
   background-color: white;
   border-radius: 30px;
   border: 1px solid black;
-
+  font-weight: 100;
   font-size: 18px;
   height: 100%;
-
   padding: 10px 20px ;
   width: 100%;
+}
+input:focus, textarea:focus { 
+  outline: none !important;
+  border-color: #000000;
+  box-shadow: 0 0 10px #d5d5d5;
+  transform: scale(1.02);
 }
 #submitButton {
   min-width: 30%;
   margin: auto;
   border-radius: 20px;
+  
+  font-weight: 100;
 }
 
 input, textarea {
   transition: 0.3s linear;
 }
 
-input:hover, textarea:hover {
+/* input:hover, textarea:hover {
   transform: scale(1.01);
   
-}
-.btn {
-  font-family: monospace;
-  background-color:black;
-}
+} */
 .btn:hover {
   background-color: rgb(73, 73, 73);
   transform: scale(1.01);
@@ -287,6 +366,7 @@ input:hover, textarea:hover {
       min-width: 100%;
       margin-top: -440px;
     }
+    
     /* ABOUT  */
     #about {
         margin-top: 250px;

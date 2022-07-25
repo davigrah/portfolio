@@ -75,7 +75,6 @@ input {
   z-index: -1;
 }
 
-
 .type {
   font-family: monospace;
   color:#0000;
@@ -128,6 +127,7 @@ stroke-width: 3px;
 }
 #skills svg, #projects svg, .options svg{
   transition: 0.2s linear;
+
 }
 #skills svg:hover, #projects svg:hover, .options svg:hover {
   transform: scale(1.1);

@@ -16,6 +16,7 @@ html, body {
     height: 20vh;
 }
 
+ 
 
 input {
   font-weight: 100;
@@ -155,8 +156,8 @@ stroke-width: 3px;
 /* PROJECTS  */
 .projects-container {
     background-color: black;
-
 }
+
 
 .tooltiptext-1, 
 .tooltiptext-2, 
@@ -164,14 +165,14 @@ stroke-width: 3px;
 .tooltiptext-4, 
 .tooltiptext-5, 
 .tooltiptext-6 {
-  opacity: 0;
+  opacity: 1;
   background-color: white;
   height: 50px;
   width: 140px;
   border-radius: 20px;
   position: relative;
-  top: 65px;
-  right: 35px;
+  bottom: 5px;
+  right: 18px;
   transition: 0.3s linear;
   font-weight: 300;
   transition: 0.3s linear;
@@ -200,54 +201,11 @@ span {
 
 .row-resize svg {
   position:relative; 
-  left: 75px;
+  left: 57px;
 }
 
-/* 
-.tooltiptext-1, 
-.tooltiptext-2, 
-.tooltiptext-3, 
-.tooltiptext-4, 
-.tooltiptext-5, 
-.tooltiptext-6 {
-  opacity: 0;
-  background-color: white;
-  height: 50px;
-  width: 140px;
-  border-radius: 20px;
-  position: relative;
-  top: 65px;
-  right: 35px;
-  transition: 0.3s linear;
-  font-weight: 300;
-  transition: 0.3s linear;
-  z-index:-1;
-}
-.tooltiptext-1,
-.tooltiptext-2,
-.tooltiptext-3{
- font-size: 17px;
- letter-spacing: 1.2px;
- 
-}
-.tooltiptext-4,.tooltiptext-6 {
-  font-size: 17px;
-  letter-spacing: 1.2px;
-}
-.tooltiptext-5 {
-  text-align: center;
-  padding-top: 12px;
-  letter-spacing: 1.2px;
-}
-span {
-  text-align: center;
-  
-}
 
-.row-resize svg {
-  position:relative; 
-  left: 75px;
-} */
+
 
 /* CONTACT  */
 #background-contact {
@@ -292,10 +250,7 @@ input, textarea {
   transition: 0.3s linear;
 }
 
-/* input:hover, textarea:hover {
-  transform: scale(1.01);
-  
-} */
+
 .btn:hover {
   background-color: rgb(73, 73, 73);
   transform: scale(1.01);
@@ -335,6 +290,10 @@ input, textarea {
       margin-top: 450px;
       margin-bottom: 50px;
 }
+ /* PROJECT  */
+ .row-resize svg {
+  position:relative; 
+  left: 70px;
 }
 @media (min-width: 400px) {
     /* HEADER  */
@@ -403,6 +362,16 @@ input, textarea {
       height: 60px;
       margin-top: 30px;
   }
+.tooltiptext-1, 
+.tooltiptext-2, 
+.tooltiptext-3, 
+.tooltiptext-4, 
+.tooltiptext-5, 
+.tooltiptext-6 {
+  top: 35px;
+  right: 30px;
+  
+
   
   
   /* CONTACT  */
@@ -471,14 +440,52 @@ input, textarea {
   /* PROJECTS  */
   #projects {
       padding-top: 150px;
-
-      
   }
+
+.tooltiptext-1, 
+.tooltiptext-2, 
+.tooltiptext-3, 
+.tooltiptext-4, 
+.tooltiptext-5, 
+.tooltiptext-6 {
+  top: 65px;
+  right: 35px;
+  
+}
+.tooltiptext-1,
+.tooltiptext-2,
+.tooltiptext-3{
+ font-size: 17px;
+ letter-spacing: 1.2px;
+ 
+}
+.tooltiptext-4,.tooltiptext-6 {
+  font-size: 17px;
+  letter-spacing: 1.2px;
+}
+.tooltiptext-5 {
+  text-align: center;
+  padding-top: 12px;
+  letter-spacing: 1.2px;
+}
+span {
+  text-align: center;
+  
+}
+
+.row-resize svg {
+  position:relative; 
+  left: 75px;
+}
+
+
   .projects-icon svg {
       width: 80px;
       height: 80px;
       margin-top: 50px;
   }
+
+
   /* CONTACT  */
   #background-contact {
     height: 100vh;
@@ -519,3 +526,4 @@ input, textarea {
   margin: 15px;
 }
 
+}

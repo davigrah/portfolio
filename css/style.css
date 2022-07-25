@@ -165,7 +165,7 @@ stroke-width: 3px;
 .tooltiptext-4, 
 .tooltiptext-5, 
 .tooltiptext-6 {
-  opacity: 1;
+  opacity: 0;
   background-color: white;
   height: 50px;
   width: 140px;

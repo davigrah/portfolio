@@ -278,7 +278,11 @@ input, textarea {
       padding-top: 200px;
   }
   #background-header {
-      margin-top: -350px;
+      margin-top: -320px;
+  }
+  /* ABOUT  */
+  #about {
+    margin-bottom: 100px;
   }
   /* SKILLS  */
   #container-background-skills {
@@ -309,7 +313,11 @@ input, textarea {
     /* CONTACT  */
     #contact {
       height: 60vh;
-     
+}
+ /* CONTACT  */
+ #background-contact {
+  height: 100vh;
+  margin-top: -500px;
 }
 }
 @media (min-width: 767px) {
@@ -339,13 +347,13 @@ input, textarea {
   /* SKILLS  */
   #container-background-skills {
       height: 100vh;
-      margin-top: -300px;
+      margin-top: -580px;
   }
   #background-skills {
       height: 100vh;
   }
   #skills {
-      margin-top: -50px;
+      margin-top: -200px;
   }
   .skill-icon svg {
       width: 70px;
@@ -370,18 +378,18 @@ input, textarea {
 .tooltiptext-6 {
   top: 35px;
   right: 30px;
-  
+}
 
   
   
   /* CONTACT  */
   #background-contact {
       height: 100vh;
-      margin-top: -400px;
+      margin-top: -650px;
   }
   #contact {
       height: 50vh;
-      margin-top: 230px;
+      margin-top: 300px;
       
   }
 }
@@ -394,7 +402,10 @@ input, textarea {
     }
   #background-skills {
     height: 100vh;
-
+    margin-top: -300px;
+  }
+  #skills {
+    margin-top: -500px;
   }
   #container-background-skills {
     margin-top: -200px;
@@ -430,9 +441,10 @@ input, textarea {
   /* SKILLS  */
   #background-skills {
     height: 100vh;
+    margin-top: -200px;
 }
 #skills {
-  margin-top: 0px;
+  margin-top: -300px;
 }
 #container-background-skills {
   margin-top: -100px;
@@ -489,11 +501,11 @@ span {
   /* CONTACT  */
   #background-contact {
     height: 100vh;
-    margin-top: -100px;
+    margin-top: -250px;
   }
   #contact {
       height: 70vh;
-      margin-top: 800px;
+      margin-top: 400px;
       margin-bottom: 100px;
       
       

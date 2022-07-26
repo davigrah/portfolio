@@ -205,12 +205,20 @@ span {
 
 /* CONTACT  */
 #background-contact {
-    height: 100vh;
-    margin-top: -400px;
+    height: 400px;
+    margin-top: -200px;
 }
 #contact {
     height: 80vh;;
     margin-top: 50%;
+}
+#contact h1{
+  background-color: white;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  
 }
 .contact {
   margin-bottom: 20px;
@@ -284,12 +292,6 @@ input, textarea {
   #container-background-skills {
     margin-top: -480px;
   }
-  /* CONTACT  */
-  #contact {
-      height: 60vh;
-      margin-top: 450px;
-      margin-bottom: 50px;
-}
  /* PROJECT  */
  .row-resize svg {
   position:relative; 
@@ -415,6 +417,12 @@ input, textarea {
   #container-background-skills {
     margin-top: -200px;
   }
+  #contact h1{
+    background-color: white;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
 }
 @media (min-width: 1023px) {
   /* HEADER  */
@@ -447,53 +455,51 @@ input, textarea {
   #background-skills {
     height: 100vh;
     margin-top: -200px;
-}
-#skills {
-  margin-top: -300px;
-}
-#container-background-skills {
-  margin-top: -100px;
-}
+  }
+  #skills {
+    margin-top: -300px;
+  }
+  #container-background-skills {
+    margin-top: -100px;
+  }
   /* PROJECTS  */
   #projects {
       padding-top: 150px;
   }
 
-.tooltiptext-1, 
-.tooltiptext-2, 
-.tooltiptext-3, 
-.tooltiptext-4, 
-.tooltiptext-5, 
-.tooltiptext-6 {
-  top: 65px;
-  right: 35px;
-  
-}
-.tooltiptext-1,
-.tooltiptext-2,
-.tooltiptext-3{
- font-size: 17px;
- letter-spacing: 1.2px;
- 
-}
-.tooltiptext-4,.tooltiptext-6 {
+  .tooltiptext-1, 
+  .tooltiptext-2, 
+  .tooltiptext-3, 
+  .tooltiptext-4, 
+  .tooltiptext-5, 
+  .tooltiptext-6 {
+    top: 65px;
+    right: 35px;
+  }
+  .tooltiptext-1,
+  .tooltiptext-2,
+  .tooltiptext-3 {
   font-size: 17px;
   letter-spacing: 1.2px;
-}
-.tooltiptext-5 {
-  text-align: center;
-  padding-top: 12px;
-  letter-spacing: 1.2px;
-}
-span {
-  text-align: center;
-  
-}
+  }
+  .tooltiptext-4,.tooltiptext-6 {
+    font-size: 17px;
+    letter-spacing: 1.2px;
+  }
+  .tooltiptext-5 {
+    text-align: center;
+    padding-top: 12px;
+    letter-spacing: 1.2px;
+  }
+  span {
+    text-align: center;
+    
+  }
 
-.row-resize svg {
-  position:relative; 
-  left: 75px;
-}
+  .row-resize svg {
+    position:relative; 
+    left: 75px;
+  }
 
 
   .projects-icon svg {
@@ -518,7 +524,7 @@ span {
 }
 
 
-/* -------------PROJECT 1------------- */
+/* -------------PROJECTS PAGE------------- */
 
 /* GENERAL STYLING */
 #body-project1 {
@@ -537,10 +543,8 @@ span {
     top: 45%;
     transform: translateY(-50%);
   }
-
-
 .options svg {
   margin: 15px;
 }
-
+}
 }

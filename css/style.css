@@ -82,9 +82,9 @@ input {
   background:
     linear-gradient(-90deg,white 5px,#0000 0) 10px 0,
     linear-gradient(white 0 0) 0 0;
-  background-size:calc(var(--n)*1ch) 200%;
-  -webkit-background-clip:padding-box,text;
-  background-clip:padding-box,text;
+  background-size: calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box, text;
+  background-clip:padding-box, text;
   background-repeat:no-repeat;
   animation: 
     b .1s infinite steps(1),   
@@ -183,8 +183,8 @@ stroke-width: 3px;
 .tooltiptext-3{
  font-size: 17px;
  letter-spacing: 1.2px;
- 
 }
+
 .tooltiptext-4,.tooltiptext-6 {
   font-size: 17px;
   letter-spacing: 1.2px;
@@ -196,16 +196,12 @@ stroke-width: 3px;
 }
 span {
   text-align: center;
-  
 }
 
 .row-resize svg {
   position:relative; 
   left: 57px;
 }
-
-
-
 
 /* CONTACT  */
 #background-contact {
@@ -321,7 +317,16 @@ input, textarea {
 }
 }
 @media (min-width: 767px) {
-   /* HEADER  */
+   /* NAV  */
+   .navbutton {
+     justify-content: center;
+     font-size: 20px;
+     width: 100px;
+     height: 40px;
+     
+   }
+  
+  /* HEADER  */
    .header-container{
       padding-top: 380px;
   }

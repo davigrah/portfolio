@@ -44,10 +44,10 @@ input {
   align-items: center;
 }
 
-.navbar-1, .arrow {
+/* .navbar-1, .arrow {
   transition: 0.3s linear;
-}
-.navbar-1:hover {
+} */
+.navbar-nav:hover {
   transform: scale(1.1);
   transition: 0.3s linear;
 }
@@ -151,11 +151,15 @@ stroke-width: 3px;
 .skills-container {
   background-color: black;
   margin-top: -100px;
+  color: white;
 }
 
 /* PROJECTS  */
 .projects-container {
     background-color: black;
+}
+.projects-container h1 {
+color: white;
 }
 
 
@@ -211,6 +215,7 @@ span {
 #contact {
     height: 80vh;;
     margin-top: 50%;
+    
 }
 #contact h1{
   background-color: white;
@@ -218,6 +223,7 @@ span {
   width: 130px;
   height: 40px;
   border-radius: 20px;
+  color: black;
   
 }
 .contact {
@@ -246,7 +252,6 @@ input:focus, textarea:focus {
   min-width: 30%;
   margin: auto;
   border-radius: 20px;
-  
   font-weight: 100;
 }
 
@@ -254,11 +259,15 @@ input, textarea {
   transition: 0.3s linear;
 }
 
-
+.btn {
+  background-color: black;
+  color: white;
+}
 .btn:hover {
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(55, 55, 55);
   transform: scale(1.01);
   transition: 0.3s linear;
+  color: white;
 }
 /* FOOTER  */
 .footer {
@@ -417,6 +426,7 @@ input, textarea {
   #container-background-skills {
     margin-top: -200px;
   }
+  
   #contact h1{
     background-color: white;
     justify-content: center;
@@ -516,7 +526,7 @@ input, textarea {
   }
   #contact {
       height: 70vh;
-      margin-top: 500px;
+      margin-top: 700px;
       margin-bottom: 0px;
       
       
@@ -548,3 +558,134 @@ input, textarea {
 }
 }
 }
+
+/* DARK MODE  */
+
+body.dark {
+  background-color: black;
+}
+.navbar-1.dark {
+  background-color: white;
+ }
+ .navbutton.dark {
+  background-color: black;
+ }
+ .header-container.dark {
+   background-color: white;
+ }
+ #background-header.dark,
+ #background-skills.dark,
+ #background-contact.dark {
+   fill: white;
+ }
+ .arrow-container.dark {
+   background-color: white;
+ }
+ .type.dark {
+  color: black;
+ }
+ .wrapper-arrow.dark {
+   background-color: white;
+ }
+ .arrow.black {
+   fill: black;
+ }
+.arrow path.dark {
+stroke: black;
+fill: transparent;
+stroke-width: 3px;  
+}
+.skills-container.dark {
+  background-color: white;
+}
+#htmlicon.dark,
+#cssicon.dark,
+#scssicon.dark,
+#jsicon.dark,
+.project-icon-1.dark,
+.project-icon-2.dark,
+.project-icon-3.dark,
+.project-icon-4.dark,
+.project-icon-5.dark,
+.project-icon-6.dark {
+  fill: black;
+  stroke: white;
+  stroke-width: 0.3;
+} 
+#skills.dark {
+  background-color: white;
+}
+
+.tooltiptext-1.dark, 
+.tooltiptext-2.dark, 
+.tooltiptext-3.dark, 
+.tooltiptext-4.dark, 
+.tooltiptext-5.dark, 
+.tooltiptext-6.dark {
+  background-color: black;
+  color: white;
+}
+.projects-container.dark,
+#projects.dark {
+  background-color: white;
+}
+
+#contact h1.dark {
+  background-color: black;
+  color: white;
+}
+.btn.dark {
+  background-color: white;
+  color: black;
+}
+.btn.dark:hover {
+  background-color: rgb(225, 224, 224);
+  transform: scale(1.01);
+  transition: 0.3s linear;
+  color: black;
+}
+
+
+
+
+.content{
+  position: absolute;
+  left: 50px;
+}
+
+/* custom checkbox*/
+.switch {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px; 
+    background: #bcbdbc;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .switch:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+  }
+  .switch:active:after { transform: scale(1.15, 0.85); }
+  .cbx:checked ~ label { background: black; }
+  .cbx:checked ~ label:after {
+    left: 20px;
+    background: #303030;
+  }
+  .cbx:disabled ~ label {
+    background: #d5d5d5;
+    pointer-events: none;
+  }
+  .cbx:disabled ~ label:after { background: #303030; }
+  .hidden { display: none; }

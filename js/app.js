@@ -33,6 +33,13 @@ const contactBackground = document.querySelector('[data-contact-background]')
 const contactH1 = document.querySelector('[data-contact-h1-darkmode]')
 const btn = document.querySelector('[data-btn-darkmode]')
 
+const bodyProject1 = document.querySelector('[data-body-darkmode]')
+const returnProject1 = document.querySelector('[data-return-darkmode]')
+const projectPageH1 = document.querySelector('[data-project-h1-darkmode]')
+const projectPageP = document.querySelector('[data-project-p-darkmode]')
+const projectPageGithubIcon = document.querySelector('[data-github-project-page-darkmode]')
+const projectPageViewIcon = document.querySelector('[data-liveview-darkmode]')
+
 buttonSwitch.addEventListener('click', () => {
   document.body.classList.toggle('dark')
   navBar.classList.toggle('dark')
@@ -73,6 +80,15 @@ buttonSwitch.addEventListener('click', () => {
   contactBackground.classList.toggle('dark')
   contactH1.classList.toggle('dark')
   btn.classList.toggle('dark')
+  bodyProject1.classList.toggle('dark')
+})
+
+buttonSwitch.addEventListener('click', () => {
+  returnProject1.classList.toggle('dark')
+  projectPageH1.classList.toggle('text-black')
+  projectPageP.classList.toggle('text-black')
+  projectPageGithubIcon.classList.toggle('dark')
+  projectPageViewIcon.classList.toggle('dark')
 })
 
 // TOOLTIP ON MOUSE OVER

@@ -434,6 +434,7 @@ input, textarea {
     height: 70px;
     border-radius: 30px;
 }
+}
 @media (min-width: 1023px) {
   /* HEADER  */
   .header-container{
@@ -540,6 +541,15 @@ input, textarea {
 #body-project1 {
   background-color: black;
 }
+#body-project1.dark {
+  background-color: white;
+}
+#return {
+  fill: white;
+}
+
+
+
 
 /* ABOUT */
 .about-container {
@@ -552,12 +562,12 @@ input, textarea {
     position: relative;
     top: 45%;
     transform: translateY(-50%);
+    color: white;
   }
 .options svg {
   margin: 15px;
 }
-}
-}
+
 
 /* DARK MODE  */
 
@@ -645,6 +655,14 @@ stroke-width: 3px;
   color: black;
 }
 
+/* Project Page Dark Mode */
+#return.dark {
+  fill: black;
+}
+
+.project-title svg.dark {
+  fill: black;
+}
 
 
 
@@ -689,3 +707,4 @@ stroke-width: 3px;
   }
   .cbx:disabled ~ label:after { background: #303030; }
   .hidden { display: none; }
+}

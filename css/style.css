@@ -285,6 +285,25 @@ input, textarea {
 
 
 /* MEDIA  */
+@media (min-width: 319px) {
+.tooltiptext-1, 
+.tooltiptext-2, 
+.tooltiptext-3, 
+.tooltiptext-4, 
+.tooltiptext-5, 
+.tooltiptext-6 {
+  opacity: 1;
+}
+.project-icon-1,
+.project-icon-2,
+.project-icon-3,
+.project-icon-4,
+.project-icon-5,
+.project-icon-6 {
+  opacity: 0;
+}
+}
+
 @media (min-width: 374px) {
   /* HEADER  */
   .wrapper-arrow {
@@ -394,6 +413,15 @@ input, textarea {
 .tooltiptext-6 {
   top: 35px;
   right: 30px;
+  opacity: 0;
+}
+.project-icon-1,
+.project-icon-2,
+.project-icon-3,
+.project-icon-4,
+.project-icon-5,
+.project-icon-6 {
+  opacity: 1;
 }
 
   

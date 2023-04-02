@@ -13,7 +13,10 @@ html, body {
     height: 100vh;
 }
 #about {
-    height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
  
@@ -23,6 +26,7 @@ input {
 }
  h1 {
   font-weight: 150;
+  
 }
 .background-rotate {
   transform: rotate(180deg);
@@ -142,7 +146,7 @@ stroke-width: 3px;
 }
 #container-background-skills {
     height: 100vh;
-    margin-top: -250px;
+    /* margin-top: -250px; */
 }
 #background-skills {
   height: 100vh;
@@ -168,7 +172,8 @@ color: white;
 .tooltiptext-3, 
 .tooltiptext-4, 
 .tooltiptext-5, 
-.tooltiptext-6 {
+.tooltiptext-6,
+.tooltiptext-7 {
   opacity: 0;
   background-color: white;
   height: 50px;
@@ -189,9 +194,11 @@ color: white;
  letter-spacing: 1.2px;
 }
 
-.tooltiptext-4,.tooltiptext-6 {
-  font-size: 17px;
+.tooltiptext-1, .tooltiptext-6, .tooltiptext-7 {
+  font-size: 15px;
   letter-spacing: 1.2px;
+  padding-top: 12px;
+  text-align: center;
 }
 .tooltiptext-5 {
   text-align: center;
@@ -200,6 +207,7 @@ color: white;
 }
 span {
   text-align: center;
+  justify-content: center;
 }
 
 .row-resize svg {
@@ -228,6 +236,7 @@ span {
 }
 .contact {
   margin-bottom: 20px;
+  
 }
 form {
     min-width: 80%;
@@ -282,28 +291,6 @@ input, textarea {
   transition: 0.3s linear;
 }
 
-
-
-/* MEDIA  */
-@media (min-width: 319px) {
-.tooltiptext-1, 
-.tooltiptext-2, 
-.tooltiptext-3, 
-.tooltiptext-4, 
-.tooltiptext-5, 
-.tooltiptext-6 {
-  opacity: 1;
-}
-.project-icon-1,
-.project-icon-2,
-.project-icon-3,
-.project-icon-4,
-.project-icon-5,
-.project-icon-6 {
-  opacity: 0;
-}
-}
-
 @media (min-width: 374px) {
   /* HEADER  */
   .wrapper-arrow {
@@ -312,18 +299,18 @@ input, textarea {
   #background-header {
       margin-top: -320px;
   }
-  /* ABOUT  */
-  #about {
-    margin-bottom: 100px;
-  }
   /* SKILLS  */
   #container-background-skills {
-    margin-top: -480px;
+    margin-top: -300px;
   }
  /* PROJECT  */
  .row-resize svg {
   position:relative; 
   left: 70px;
+}
+#skills {
+  padding-bottom: 350px; 
+}
 }
 @media (min-width: 400px) {
     /* HEADER  */
@@ -343,9 +330,8 @@ input, textarea {
  /* CONTACT  */
  #background-contact {
   height: 100vh;
-  margin-top: -500px;
 }
-}
+
 @media (min-width: 767px) {
    /* NAV  */
    .navbutton {
@@ -370,9 +356,7 @@ input, textarea {
     }
     
     /* ABOUT  */
-    #about {
-        margin-top: 300px;
-    }
+
     #about h1 {
       font-size: 40px;
   }
@@ -382,7 +366,8 @@ input, textarea {
   /* SKILLS  */
   #container-background-skills {
       height: 100vh;
-      margin-top: -580px;
+      margin-top: -300px;
+      margin-bottom: -120px;
   }
   #background-skills {
       height: 100vh;
@@ -410,7 +395,8 @@ input, textarea {
 .tooltiptext-3, 
 .tooltiptext-4, 
 .tooltiptext-5, 
-.tooltiptext-6 {
+.tooltiptext-6,
+.tooltiptext-7  {
   top: 35px;
   right: 30px;
   opacity: 0;
@@ -420,7 +406,8 @@ input, textarea {
 .project-icon-3,
 .project-icon-4,
 .project-icon-5,
-.project-icon-6 {
+.project-icon-6,
+.project-icon-7 {
   opacity: 1;
 }
 
@@ -452,7 +439,7 @@ input, textarea {
     margin-top: -500px;
   }
   #container-background-skills {
-    margin-top: -200px;
+    margin-top: 0px;
   }
   
   #contact h1{
@@ -486,10 +473,7 @@ input, textarea {
       height: 90px;
       margin-top: 50px;
   }
-  /* ABOUT  */
-  #about {
-    margin-top: 300px;
-  }
+
   /* SKILLS  */
   #background-skills {
     height: 100vh;
@@ -500,10 +484,13 @@ input, textarea {
   }
   #container-background-skills {
     margin-top: -100px;
+    margin-bottom: -300px;
+  
   }
   /* PROJECTS  */
   #projects {
       padding-top: 150px;
+      margin-top: 0;
   }
 
   .tooltiptext-1, 
@@ -511,7 +498,9 @@ input, textarea {
   .tooltiptext-3, 
   .tooltiptext-4, 
   .tooltiptext-5, 
-  .tooltiptext-6 {
+  .tooltiptext-6,
+  .tooltiptext-7 {
+
     top: 65px;
     right: 35px;
   }
@@ -635,6 +624,7 @@ stroke-width: 3px;
 }
 .skills-container.dark {
   background-color: white;
+  padding-bottom: 180px;
 }
 #htmlicon.dark,
 #cssicon.dark,

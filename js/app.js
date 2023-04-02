@@ -23,6 +23,7 @@ const jsIcon = document.querySelector('[data-js-icon-darkmode]')
 const projects = document.querySelector('[data-projects-darkmode]')
 const projectsContainer = document.querySelector('[data-projects-container-darkmode]')
 const projectsH1 = document.querySelector('[data-projects-h1-darkmode]')
+const joannaPortfolioIcon = document.querySelector('[data-joannaportfolio-icon-darkmode]')
 const responsiveLayoutIcon = document.querySelector('[data-responsive-layout-icon-darkmode]')
 const webAppDashboardIcon = document.querySelector('[data-web-app-dashboard-icon-darkmode]')
 const studentsDirectoryIcon = document.querySelector('[data-students-directory-icon-darkmode]')
@@ -32,7 +33,6 @@ const toDoListIcon = document.querySelector('[data-to-do-list-icon-darkmode]')
 const contactBackground = document.querySelector('[data-contact-background]')
 const contactH1 = document.querySelector('[data-contact-h1-darkmode]')
 const btn = document.querySelector('[data-btn-darkmode]')
-
 
 buttonSwitch.addEventListener('click', () => {
   document.body.classList.toggle('dark')
@@ -59,6 +59,7 @@ buttonSwitch.addEventListener('click', () => {
   projects.classList.toggle('dark')
   projectsContainer.classList.toggle('dark')
   projectsH1.classList.toggle('text-black')
+  joannaPortfolioIcon.classList.toggle('dark')
   responsiveLayoutIcon.classList.toggle('dark')
   webAppDashboardIcon.classList.toggle('dark')
   studentsDirectoryIcon.classList.toggle('dark')
@@ -71,12 +72,11 @@ buttonSwitch.addEventListener('click', () => {
   tooltip4.classList.toggle('dark')
   tooltip5.classList.toggle('dark')
   tooltip6.classList.toggle('dark')
+  tooltip7.classList.toggle('dark')
   contactBackground.classList.toggle('dark')
   contactH1.classList.toggle('dark')
   btn.classList.toggle('dark')
 })
-
-
 
 // TOOLTIP ON MOUSE OVER
 const tooltip1 = document.querySelector('.tooltiptext-1')
@@ -85,12 +85,15 @@ const tooltip3 = document.querySelector('.tooltiptext-3')
 const tooltip4 = document.querySelector('.tooltiptext-4')
 const tooltip5 = document.querySelector('.tooltiptext-5')
 const tooltip6 = document.querySelector('.tooltiptext-6')
+const tooltip7 = document.querySelector('.tooltiptext-7')
+
 const project1 = document.querySelector('.project-icon-1')
 const project2 = document.querySelector('.project-icon-2')
 const project3 = document.querySelector('.project-icon-3')
 const project4 = document.querySelector('.project-icon-4')
 const project5 = document.querySelector('.project-icon-5')
 const project6 = document.querySelector('.project-icon-6')
+const project7 = document.querySelector('.project-icon-7')
 
 project1.addEventListener('mouseover', hoverOn1)
 project2.addEventListener('mouseover', hoverOn2)
@@ -98,6 +101,7 @@ project3.addEventListener('mouseover', hoverOn3)
 project4.addEventListener('mouseover', hoverOn4)
 project5.addEventListener('mouseover', hoverOn5)
 project6.addEventListener('mouseover', hoverOn6)
+project7.addEventListener('mouseover', hoverOn7)
 
 project1.addEventListener('mouseout', mouseout1)
 project2.addEventListener('mouseout', mouseout2)
@@ -105,6 +109,7 @@ project3.addEventListener('mouseout', mouseout3)
 project4.addEventListener('mouseout', mouseout4)
 project5.addEventListener('mouseout', mouseout5)
 project6.addEventListener('mouseout', mouseout6)
+project7.addEventListener('mouseout', mouseout7)
 
 function hoverOn1 () {
   tooltip1.style.opacity = '1'
@@ -135,6 +140,10 @@ function hoverOn6 () {
   tooltip6.style.opacity = '1'
   project6.style.opacity = '0'
 }
+function hoverOn7 () {
+  tooltip7.style.opacity = '1'
+  project7.style.opacity = '0'
+}
 
 function mouseout1 () {
   tooltip1.style.opacity = '0'
@@ -164,4 +173,8 @@ function mouseout5 () {
 function mouseout6 () {
   tooltip6.style.opacity = '0'
   project6.style.opacity = '1'
+}
+function mouseout7 () {
+  tooltip7.style.opacity = '0'
+  project7.style.opacity = '1'
 }

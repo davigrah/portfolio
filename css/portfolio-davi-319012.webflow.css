@@ -1398,10 +1398,14 @@ p {
   min-height: auto;
   min-width: 740px;
   opacity: 1;
-  position: static;
+  position: absolute;
   top: auto;
   left: auto;
   overflow: visible;
+}
+
+.lottie-animation-7.english {
+  position: relative;
 }
 
 .heading-21 {
@@ -1436,7 +1440,7 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .frame {
@@ -2191,6 +2195,10 @@ p {
 
   .social-icon {
     margin-bottom: 40px;
+  }
+
+  .text-span-8 {
+    font-size: 5vw;
   }
 }
 

@@ -1203,6 +1203,7 @@ p {
 .paragraph-3 {
   color: #fffee7;
   text-align: center;
+  padding-left: 0;
   font-family: larken, sans-serif;
   font-size: 38px;
   transition: all .2s;

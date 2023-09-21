@@ -2010,6 +2010,25 @@ p {
   opacity: 0;
 }
 
+.preloader {
+  z-index: 9999;
+  height: 100vh;
+  background-color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.lottie-animation-12 {
+  width: 30vw;
+}
+
 @media screen and (min-width: 1280px) {
   .contact-2 {
     z-index: 6;

@@ -663,7 +663,7 @@ p {
   padding-left: 23vw;
   padding-right: 23vw;
   font-family: larken, sans-serif;
-  font-size: 5.7em;
+  font-size: 5.4em;
   font-weight: 500;
   line-height: 1;
 }
@@ -2018,7 +2018,7 @@ p {
   justify-content: center;
   align-items: center;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0%;
   bottom: 0%;
   left: 0%;

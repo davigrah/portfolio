@@ -2155,6 +2155,11 @@ p {
     font-size: 4vw;
   }
 
+  .nav-right {
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .nav-dropdown-card {
     box-shadow: none;
     background-color: #0000;
@@ -2396,6 +2401,11 @@ p {
 
   .text-span-8 {
     font-size: 16vw;
+  }
+
+  .nav-right {
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

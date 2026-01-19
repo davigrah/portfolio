@@ -1374,6 +1374,7 @@ p {
 
 .text-block-4 {
   color: #fff;
+  font-family: larken, sans-serif;
 }
 
 .nav-dropdown-icon {
@@ -1519,7 +1520,7 @@ p {
   background-color: #0000;
   width: 100vw;
   padding: 24px 5%;
-  position: absolute;
+  position: fixed;
 }
 
 .nav-container {
@@ -1531,7 +1532,7 @@ p {
   justify-content: space-between;
   width: 100%;
   max-width: 54.9rem;
-  height: 6rem;
+  height: 3.7rem;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 26px;
@@ -2164,7 +2165,7 @@ p {
   }
 
   .nav-menu-button.w--open {
-    background-color: #5caefe;
+    background-color: var(--amarelo);
   }
 
   .nav-link {
@@ -2184,11 +2185,14 @@ p {
   .nav-menu {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    background-color: #fafafa;
+    text-align: right;
+    background-color: #0000;
     border: 1px solid #fff;
     border-radius: 24px;
     flex-flow: column;
-    max-width: 580px;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 12px;
